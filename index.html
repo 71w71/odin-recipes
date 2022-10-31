@@ -12,16 +12,15 @@
     * {
         background-color:#1d2a35;
         color:ghostwhite;
-        font-style: normal;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         align-content: center;
-        align-items:flex-end;
+        text-align:left;
         align-self: auto;
-        padding-left: 0.5%;
-      
+        table-layout: auto;
     }
 
 </style>
+
 
 <body>
 
@@ -30,11 +29,40 @@
 
     <p>Please pick a recipe from the list below:</p>
 
-    <p><a href="./recipes/coq.html">Coq Au Vin</a></p>
+    <table>
+        <thead>
+            <tr>
+                
+                <th>Recipe</th>
+                <th>Origin</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Coq Au Vin</td>
+                <td>France</td>
+                <td><a href="./recipes/coq.html">Click here</a></td>
+            </tr>
+            <tr>
+                <td>Bœuf Bourguignon</td>
+                <td>France</td>
+                <td><a href="./recipes/beef.html">Click here </a></td>
+            </tr>
+            <tr>
+                <td>Eggplant Vindaloo</td>
+                <td>India/Portugal</td>
+                <td><a href="./recipes/eggplant.html">Click here</a></td>
+            </tr>
+        </tbody>
+    </table>
 
-    <p><a href="./recipes/beef.html">Bœuf Bourguignon </a></p>
 
-    <p><a href="./recipes/eggplant.html">Eggplant Vindaloo</a></p>
+    <h4>Leave Us a Comment</h4>
+    <form action="https://google.com/search" method="get">
+        <input autocomplete="off" autofocus name="q" placeholder="Search for a Recipe" type="text">
+        <input type="submit">
+    </form>
 
 </body>
 </html>
