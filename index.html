@@ -6,43 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
-
-    <!--Styling goes head-->
-    <style>
-        
-        h1{
-            color:black;
-            text-align: center;
-        }
-
-        table {
-            align-items: center;
-            align-content: center;
-            color: crimson;
-        }
-
-        body {
-
-        }
-    </style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
 </head>
 
+<style>
+    .content-table {
+        border-collapse: collapse;
+        margin: auto;
+        font-size: 1.3em;
+        min-width: 400px;
+        font-weight: 100;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
 
-<body>
+    .content-table thead tr{
+        background-color:rgb(213, 124, 7);
+        color:black;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 0.5px dotted grey;
+    }
+
+    .content-table tbody tr:nth-of-type(even) {
+        background-color: rgb(246, 245, 226);
+    }
+
+    .content-table tbody tr:last-of-type {
+        border-bottom: 2px solid rgb(213, 124, 7);
+    }
+
+    .content-table tbody tr.active-row {
+        font-weight: bold;
+        color: black;
+    }
+
+    .content {
+        text-align: center;
+        background-color:aliceblue;
+        font-family: 'Comfortaa', cursive;
+    }
 
 
-    <h1>My Odin Recipes:</h1>
+</style>
 
-    <p>Please pick a recipe from the list below:</p>
+<body class="content">
+    <h1>My Favorite Recipes</h1>
+    <p>Please pick a recipe from the table below:</p>
 
-    <table style=>
+    <table class="content-table">
         <thead>
             <tr>
-                
-                <th>Recipe</th>
-                <th>Origin</th>
-                <th>Link</th>
+                <th>Dish </th>
+                <th>Country of Origin</th>
+                <th>Link to Recipe</th>
             </tr>
         </thead>
         <tbody>
@@ -51,7 +79,7 @@
                 <td>France</td>
                 <td><a href="./recipes/coq.html">Click here</a></td>
             </tr>
-            <tr>
+            <tr class="active-row">
                 <td>Bœuf Bourguignon</td>
                 <td>France</td>
                 <td><a href="./recipes/beef.html">Click here </a></td>
